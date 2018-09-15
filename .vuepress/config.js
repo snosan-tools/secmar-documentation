@@ -34,6 +34,5 @@ module.exports = {
     displayAllHeaders: true,
     sidebar: sidebar,
     sidebarDepth: 1,
-    lastUpdated: 'Last Updated'
   },
 }
