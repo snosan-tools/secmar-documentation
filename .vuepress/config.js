@@ -28,7 +28,8 @@ module.exports = {
     }
   },
   head: [
-    ['link', { rel: 'icon', href: 'https://www.snosan.fr/themes/rainlab-vanilla/assets/images/favicon.png' }]
+    ['link', { rel: 'icon', href: 'https://www.snosan.fr/themes/rainlab-vanilla/assets/images/favicon.png' }],
+    ['meta', { name: 'theme-color', content: '#0d3f94' }]
   ],
   themeConfig: {
     displayAllHeaders: true,
