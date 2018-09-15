@@ -1,7 +1,27 @@
+sidebar = [
+  ['/', 'Accueil'],
+  '/CHANGELOG',
+  '/schema',
+]
+openDataSidebar = [
+  ['/', 'Accueil'],
+  '/preambule',
+  '/CHANGELOG',
+  '/cross',
+  '/donnees',
+  '/schema',
+]
+base = '/'
+
+if (process.env.MODE === 'opendata') {
+  sidebar = openDataSidebar
+  base = '/secmar-documentation/'
+}
+
 module.exports = {
   title: 'SECMAR',
   description: 'Jeu de données des affaires maritimes sur l\'assistance et le sauvetage en mer',
-  base: '/secmar-documentation/',
+  base: base,
   locales: {
     '/': {
       lang: 'fr',
@@ -12,14 +32,7 @@ module.exports = {
   ],
   themeConfig: {
     displayAllHeaders: true,
-    sidebar: [
-      ['/', 'Accueil'],
-      '/preambule',
-      '/cross',
-      '/donnees',
-      '/schema',
-      '/tables',
-    ],
+    sidebar: sidebar,
     sidebarDepth: 1,
     lastUpdated: 'Last Updated'
   },
