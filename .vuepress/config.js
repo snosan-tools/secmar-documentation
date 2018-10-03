@@ -2,6 +2,7 @@ sidebar = [
   ['/', 'Accueil'],
   '/CHANGELOG',
   '/schema',
+  '/tables_codes',
 ]
 openDataSidebar = [
   ['/', 'Accueil'],
@@ -10,6 +11,7 @@ openDataSidebar = [
   '/cross',
   '/donnees',
   '/schema',
+  '/tables_codes',
 ]
 base = '/'
 
