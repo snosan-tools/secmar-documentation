@@ -12,4 +12,4 @@ Ce jeu de données contient des données propres à un métier complexe et chaqu
 
 La publication des moyens engagés pour chaque opération sera réalisée ultérieurement.
 
-Ce jeu de données est produit par la Direction des Affaires Maritimes.
+Ce jeu de données est produit par la [Direction des Affaires Maritimes](https://www.linkedin.com/showcase/affaires-maritimes/).
