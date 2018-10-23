@@ -1,6 +1,7 @@
 sidebar = [
   ['/', 'Accueil'],
   '/CHANGELOG',
+  '/langage_sql',
   '/schema',
   '/tables_codes',
 ]
