@@ -2,6 +2,7 @@ sidebar = [
   ['/', 'Accueil'],
   '/CHANGELOG',
   '/langage_sql',
+  '/redash',
   '/schema',
   '/tables_codes',
 ]
