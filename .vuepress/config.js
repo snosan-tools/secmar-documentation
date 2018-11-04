@@ -5,6 +5,7 @@ sidebar = [
   '/redash',
   '/schema',
   '/tables_codes',
+  '/snosan',
 ]
 openDataSidebar = [
   ['/', 'Accueil'],
