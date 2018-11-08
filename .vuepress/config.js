@@ -6,7 +6,7 @@ sidebar = [
   '/schema',
   '/tables_codes',
   '/snosan',
-  '/site_web_snosan,
+  '/site_web_snosan',
 ]
 openDataSidebar = [
   ['/', 'Accueil'],
