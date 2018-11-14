@@ -1,21 +1,52 @@
 sidebar = [
   ['/', 'Accueil'],
   '/CHANGELOG',
-  '/langage_sql',
-  '/redash',
-  '/schema',
-  '/tables_codes',
-  '/snosan',
-  '/site_web_snosan',
+  {
+    title: 'Formations',
+    collapsable: true,
+    children: [
+      '/langage_sql',
+      '/redash',
+    ]
+  },
+  {
+    title: 'Modèle de données',
+    collapsable: false,
+    children: [
+      '/schema',
+      '/tables_codes',
+    ]
+  },
+  {
+    title: 'SNOSAN',
+    collapsable: true,
+    children: [
+      '/snosan',
+      '/site_web_snosan',
+    ]
+  }
 ]
+
 openDataSidebar = [
   ['/', 'Accueil'],
   '/preambule',
   '/CHANGELOG',
-  '/cross',
-  '/donnees',
-  '/schema',
-  '/tables_codes',
+  {
+    title: 'Concepts métier',
+    collapsable: true,
+    children: [
+      '/cross',
+      '/donnees',
+    ]
+  },
+  {
+    title: 'Modèle de données',
+    collapsable: false,
+    children: [
+      '/schema',
+      '/tables_codes',
+    ]
+  }
 ]
 base = '/'
 
@@ -45,5 +76,5 @@ module.exports = {
     displayAllHeaders: true,
     sidebar: sidebar,
     sidebarDepth: 1,
-  },
+  }
 }
