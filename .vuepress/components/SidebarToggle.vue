@@ -78,6 +78,7 @@ export default {
         display inline-block
         position absolute
         right 0
+        top 0
         height 100%
         writing-mode vertical-lr
         text-align center
