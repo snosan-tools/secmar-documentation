@@ -1,5 +1,5 @@
 <template>
-    <div v-if="!detectMobile() && !isToggleHidden" class="sidebar__toggle">
+    <div v-if="!isToggleHidden" class="sidebar__toggle">
         <span class="arrow"
             :class="[isSidebarHidden ? 'right' : 'left']"/>
         <span class="sidebar__toggle-label" @click="toggleSidebar">
@@ -33,21 +33,6 @@ export default {
           }
 
           this.isSidebarHidden = !this.isSidebarHidden
-      },
-      detectMobile() {
-          if( navigator.userAgent.match(/Android/i)
-            || navigator.userAgent.match(/webOS/i)
-            || navigator.userAgent.match(/iPhone/i)
-            || navigator.userAgent.match(/iPad/i)
-            || navigator.userAgent.match(/iPod/i)
-            || navigator.userAgent.match(/BlackBerry/i)
-            || navigator.userAgent.match(/Windows Phone/i)
-            ){
-                return true;
-            }
-            else {
-                return false;
-            }
       }
   },
   beforeMount() {
@@ -103,4 +88,8 @@ export default {
             color lighten($textColor, 25%)
             margin-left .25rem
             cursor pointer
+@media (max-width: $MQMobile)
+  .sidebar
+    &__toggle
+      display none
 </style>
