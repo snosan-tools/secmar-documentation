@@ -67,7 +67,6 @@ export default {
     position relative
 
 .sidebar
-    white-space nowrap
     transition all .25s ease
     &.shrink
         transform translateX(-85%)
