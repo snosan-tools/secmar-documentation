@@ -26,6 +26,11 @@ sidebar = [
     ]
   }
 ]
+nav = [
+  { text: 'Redash', link: 'https://redash.snosan.fr' },
+  { text: 'Cartographie', link: 'https://carte.snosan.fr' },
+  { text: 'Contact', link: '/snosan.html#contact' },
+]
 
 openDataSidebar = [
   ['/', 'Accueil'],
@@ -48,10 +53,15 @@ openDataSidebar = [
     ]
   }
 ]
+opendataNav = [
+  { text: 'Données brutes', link: 'https://www.data.gouv.fr/fr/datasets/operations-coordonnees-par-les-cross/' },
+  { text: 'Cartographie', link: 'https://carte.snosan.fr' },
+]
 base = '/'
 
 if (process.env.MODE === 'opendata') {
   sidebar = openDataSidebar
+  nav = opendataNav
   base = '/secmar-documentation/'
 }
 
@@ -76,5 +86,6 @@ module.exports = {
     displayAllHeaders: true,
     sidebar: sidebar,
     sidebarDepth: 1,
+    nav: nav
   }
 }
