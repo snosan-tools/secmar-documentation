@@ -31,6 +31,10 @@ module.exports = {
   locales: {
     '/': {
       lang: 'fr',
+      toggle: {
+        hideText: 'Cacher le menu',
+        showText: 'Afficher le menu'
+      }
     }
   },
   head: [
